@@ -3,11 +3,379 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS reset CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <!-- Bootstrap Icon Font CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <title>Bootstrap</title>
 </head>
 <body>
-    <p>hello world!</p>
-    <h1>123123123</h1>
-    <p>Kristy testing</p>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">Dashboard</span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0 text-white">
+                                <i class="bi bi-pie-chart"></i> <span class="ms-1 d-none d-sm-inline">Overview</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
+                                <i class="bi bi-ticket-detailed-fill"></i> <span class="ms-1 d-none d-sm-inline">Tickets</span> </a>
+                            
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle text-white">
+                                <i class="bi bi-lightbulb-fill"></i> <span class="ms-1 d-none d-sm-inline">Ideas</span></a>
+                        </li>
+                        <li>
+                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
+                                <i class="bi bi-people-fill"></i> <span class="ms-1 d-none d-sm-inline">Contacts</span></a>
+                            
+                        </li>
+                        <li>
+                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
+                                <i class="bi bi-person-badge-fill"></i> <span class="ms-1 d-none d-sm-inline">Agents</span> </a>
+                              
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle text-white">
+                                <i class="bi bi-journal"></i> <span class="ms-1 d-none d-sm-inline">Articles</span> </a>
+                        </li>
+
+                        <!-- Divider -->
+                        <hr class="sidebar-divider">
+
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle text-white">
+                                <i class="bi bi-gear-fill"></i> <span class="ms-1 d-none d-sm-inline">Settings</span> </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle text-white">
+                                <i class="bi bi-award"></i> <span class="ms-1 d-none d-sm-inline">Subscription</span> </a>
+                        </li>
+                    </ul>
+                    
+                    
+                    
+                </div>
+            </div>
+
+            <div class="col py-3">
+                
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Overview</h1>
+                        
+                        <div class="topbar-divider d-none d-md-block"></div>
+                            
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                            <img class="img-profile rounded-circle"
+                                src="img/undraw_profile.svg">
+                        </a>   
+                        
+                        
+                        
+                    </div>
+
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Resolved Card-->
+                        <div class="col-xl-2 col-lg-3">                     
+                          <div class="card border-left-0 shadow mb-4">                         
+                              <div class="card-body text-center">
+                                  <div class="row no-gutters align-items-center">
+                                      <div class="col mr-2">
+                                          <div class="text-xs font-weight-bold text-gray-500 text-uppercase mb-1">
+                                              Resolved</div>
+                                          <div class="h5 mb-0 font-weight-bold text-black">449</div>
+                                      </div>
+                                  </div>
+                               </div>
+                          </div>
+                        </div>
+                        <!-- Overdue Card -->
+                        <div class="col-xl-2 col-lg-3">                     
+                          <div class="card border-left-0 shadow mb-4">                         
+                              <div class="card-body text-center">
+                                  <div class="row no-gutters align-items-center">
+                                      <div class="col mr-2">
+                                          <div class="text-xs font-weight-bold text-gray-500 text-uppercase mb-1">
+                                              Overdue</div>
+                                          <div class="h5 mb-0 font-weight-bold text-black">16</div>
+                                        </div>
+                                      </div>
+                                   </div>
+                              </div>
+                            </div>
+
+                                               <!-- Open  Card -->
+                                               <div class="col-xl-2 col-lg-3">                     
+                                                <div class="card border-left-0 shadow mb-4">                         
+                                                    <div class="card-body text-center">
+                                                        <div class="row no-gutters align-items-center">
+                                                            <div class="col mr-2">
+                                                                <div class="text-xs font-weight-bold text-gray-500 text-uppercase mb-1">
+                                                                    Open</div>
+                                                                <div class="h5 mb-0 font-weight-bold text-black">43</div>
+                                                              </div>
+                                                            </div>
+                                                         </div>
+                                                    </div>
+                                                  </div>
+
+                     <!-- On Hold Card -->
+                     <div class="col-xl-2 col-lg-3">                     
+                      <div class="card border-left-0 shadow mb-4">                         
+                          <div class="card-body text-center">
+                              <div class="row no-gutters align-items-center">
+                                  <div class="col mr-2">
+                                      <div class="text-xs font-weight-bold text-gray-500 text-uppercase mb-1">
+                                          On hold</div>
+                                      <div class="h5 mb-0 font-weight-bold text-black">64</div>
+                                    </div>
+                                  </div>
+                               </div>
+                          </div>
+                        </div>
+            </div>   <!-- closed row  -->
+                    <!-- Content Row -->
+
+                    <div class="row">
+
+                       <!-- Area Chart -->
+                       <div class="col-xl-8 col-lg-7">
+                        <div class="card shadow mb-4">
+                            <!-- Card Header - Dropdown -->
+                            <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">Today's trends</h6>
+                                <div class="dropdown no-arrow">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                        aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-header">Dropdown Header:</div>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="card-body">
+                                <div class="chart-area">
+                                    <canvas id="myAreaChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                          
+                             <!-- Resolve, Receive, Average first response, average response, resolution Card  -->
+                        <div class="col-xl-4 col-lg-5">
+                          <!-- Resolve Card -->
+                          <div class="card border-left-0 shadow mb-0">                         
+                              <div class="card-body text-center">
+                                  <div class="row no-gutters align-items-center">
+                                      <div class="col mr-2">
+                                          <div class="text-xs font-weight-bold text-gray-500 text-uppercase mb-1">
+                                              Resolved</div>
+                                          <div class="h5 mb-0 font-weight-bold text-black">449</div>
+                                      </div>
+                                      <!--
+                                      <div class="col-auto">
+                                          <i class="fas fa-calendar fa-2x text-gray-300"></i>    -->
+                                      </div>
+                                  </div>
+                              </div>
+
+  <!-- Receive Card  -->
+  <div class="card border-left-0 shadow mb-0">
+        <div class="card-body text-center">
+            <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-gray-500 text-uppercase mb-1">
+                        Receive</div>
+                    <div class="h5 mb-0 font-weight-bold text-black">426</div>
+                </div>
+             
+            <!-- <div class="col-auto">
+                    <i class="fas fa-calendar fa-2x text-gray-300"></i>  -->
+            </div>
+         </div>
+    </div>
+
+<!-- Average First Response Card  -->
+<div class="card border-left-0 shadow mb-0">
+  <div class="card-body text-center">
+      <div class="row no-gutters align-items-center">
+          <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-gray-500 text-uppercase mb-1">
+                  Average first response time</div>
+              <div class="h5 mb-0 font-weight-bold text-black">33m</div>
+          </div>
+       
+      <!-- <div class="col-auto">
+              <i class="fas fa-calendar fa-2x text-gray-300"></i>  -->
+      </div>
+   </div>
+</div>
+
+<!-- Average Response Card  -->
+<div class="card border-left-0 shadow mb-0">
+  <div class="card-body text-center">
+      <div class="row no-gutters align-items-center">
+          <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-gray-500 text-uppercase mb-1">
+                  Average response time</div>
+              <div class="h5 mb-0 font-weight-bold text-black">3h 8m</div>
+          </div>
+       
+      <!-- <div class="col-auto">
+              <i class="fas fa-calendar fa-2x text-gray-300"></i>  -->
+      </div>
+   </div>
+</div>
+
+<!-- Revolutions Within SLA Card  -->
+<div class="card border-left-0 shadow mb-0">
+  <div class="card-body text-center">
+      <div class="row no-gutters align-items-center">
+          <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-gray-500 text-uppercase mb-1">
+                  Resolution within SLA</div>
+              <div class="h5 mb-0 font-weight-bold text-black">94%</div>
+          </div>
+      </div>
+   </div>
+</div>
+</div>
+</div>
+
+                          </div>    
+
+                    <!-- Content Row -->
+                    <div class="row">
+
+                         <!-- Unresolved tickets -->
+                        <div class="col-lg-6 mb-2">
+                            <div class="card shadow mb-4">
+                              <div class="card-header py-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <h6 class="m-0 font-weight-bold text-black">Unresolved tickets</h6>
+                                  <a href="#" class="btn btn-link text-primary">View Details</a>
+                                </div>
+                              </div>
+                            <div class="card-body">
+                                  <!-- Table -->
+                                  <table class="table table-borderless">
+                                    <tbody>
+                                      <tr>
+                                        <td>Waiting on Feature Request</td>
+                                        <td>4238</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Awaiting Customer Response</td>
+                                        <td>1005</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Awaiting Developer Fix</td>
+                                        <td>914</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Pending</td>
+                                        <td>281</td>
+                                      </tr>
+                                      <!-- Add more rows as needed -->
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+
+ <!-- Tasks Card -->
+ <div class="col-lg-6 mb-2">
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <div class="d-flex justify-content-between align-items-center">
+        <h6 class="m-0 font-weight-bold text-black">Tasks</h6>
+        <a href="#" class="btn btn-link text-primary">View all</a>
+      </div>
+    </div>
+    
+    <div class="card-body">
+        <!-- Table -->
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td>Waiting on Feature Request</td>
+              <td>4238</td>
+            </tr>
+            <tr>
+              <td>Awaiting Customer Response</td>
+              <td>1005</td>
+            </tr>
+            <tr>
+              <td>Awaiting Developer Fix</td>
+              <td>914</td>
+            </tr>
+            <tr>
+              <td>Pending</td>
+              <td>281</td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Chart.js (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- My chart script -->
+    <script src="js/chart-script.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
