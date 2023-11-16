@@ -1,7 +1,6 @@
 {
   "name": "bootstrapassignment",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "lite-server --baseDir=\"public\"",
@@ -16,5 +15,6 @@
     "concurrently": "^8.2.2",
     "lite-server": "^2.6.1",
     "sass": "^1.69.5"
-  }
+  },
+  "description": ""
 }
