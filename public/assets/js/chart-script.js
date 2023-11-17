@@ -126,33 +126,11 @@ var myLineChart = new Chart(ctx, {
   type: 'line',
   data: {
     labels: [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12",
-      "13",
-      "14",
-      "15",
-      "16",
-      "17",
-      "18",
-      "19",
-      "20",
-      "21",
-      "22",
+      "0", "1", "2", "3", "4", "5", "6", "7","8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22",
     ],
     datasets: [{
       label: "Earnings",
-      lineTension: 0.5,
+      lineTension: 0.4,
       backgroundColor: "rgba(78, 115, 223, 0.05)",
       borderColor: "rgba(78, 115, 223, 1)",
       pointRadius: 3,
@@ -234,3 +212,10 @@ var myLineChart = new Chart(ctx, {
   }
 });
 
+var clockElement = document.getElementById('clock');
+
+function clock() {
+    clockElement.textContent = new Date().toString();
+}
+
+setInterval(clock, 1000);
