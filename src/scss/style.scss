@@ -1,12 +1,35 @@
-$primary-color: white;
+$primary-color: #FFF;
 $spacing: 16px;
+$primary-font: 'Mulish', sans-serif;
 
-body {
-  background: black;
-  color: $primary-color;
+.container-fluid {
+  font-family: $primary-font;
 }
+  
 header {
   padding: $spacing;
 }
 
+.tasks-button {
+  height: 24px;
+  border-radius: 8px;
+  background-color: rgba(41, 204, 151, 1);
+  color: $primary-color;
+  border: none;
+  font-size: 11px ;
+  font-family: $primary-font;
+}
+
+#urgent-button{
+  width: 74px;
+  background-color: rgba(254, 196, 0, 1);
+}
+#new-button{
+  width: 74px;
+}
+#default-button{
+  width: 76px;
+  color: rgba(159, 162, 180, 1);
+  background-color: rgba(240, 241, 247, 1);
+}
 
