@@ -1,5 +1,6 @@
 .container-fluid {
   font-family: "Mulish", sans-serif;
+  background-color: rgb(247, 248, 252);
 }
 
 header {
@@ -29,6 +30,14 @@ header {
   width: 76px;
   color: rgb(159, 162, 180);
   background-color: rgb(240, 241, 247);
+}
+
+#menu li a span, #menu li a i, #kit {
+  color: rgb(164, 166, 179);
+}
+
+#dashboard {
+  color: rgb(54, 55, 64);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,12 @@
 $primary-color: #FFF;
 $spacing: 16px;
 $primary-font: 'Mulish', sans-serif;
+$menu-text-color: rgba(164, 166, 179, 1);
+$dashboard-bg-color:rgba(54, 55, 64, 1);
 
 .container-fluid {
   font-family: $primary-font;
+  background-color: rgba(247, 248, 252, 1);
 }
   
 header {
@@ -24,12 +27,21 @@ header {
   width: 74px;
   background-color: rgba(254, 196, 0, 1);
 }
+
 #new-button{
   width: 74px;
 }
+
 #default-button{
   width: 76px;
   color: rgba(159, 162, 180, 1);
   background-color: rgba(240, 241, 247, 1);
 }
 
+#menu li a span, #menu li a i, #kit{
+  color: $menu-text-color;
+}
+
+#dashboard{
+  color: $dashboard-bg-color;
+}
