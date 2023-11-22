@@ -1,13 +1,18 @@
+// Change the color of menu items and add stroke on the left when user hover
 document.addEventListener("DOMContentLoaded", function() {
-    var menuItems = document.querySelectorAll("#menu li");
+    var menuItems = document.querySelectorAll("nav li");
 
     menuItems.forEach(function(item) {
-        item.addEventListener("mouseover", function() {
-            this.style.backgroundColor = "#333"; // Change to your desired hover color
+        var link = item.querySelector("a");
+
+        link.addEventListener("mouseover", function() {
+            this.style.backgroundColor = "#333"; 
+            this.style.borderLeft = "3px solid #DDE2FF";
         });
 
-        item.addEventListener("mouseout", function() {
-            this.style.backgroundColor = ""; // Revert to the original color (empty string means use the CSS style)
+        link.addEventListener("mouseout", function() {
+            this.style.backgroundColor = ""; 
+            this.style.borderLeft = "none";
         });
     });
 });
