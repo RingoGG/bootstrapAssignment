@@ -40,4 +40,15 @@ header {
   color: rgb(54, 55, 64);
 }
 
+#user-icon {
+  width: 43.333px;
+  height: 43.333px;
+  padding: 2px;
+  border: 1.5px solid rgb(223, 224, 235);
+}
+
+#create-icon {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */

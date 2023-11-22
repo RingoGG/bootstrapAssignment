@@ -111,16 +111,16 @@
 
                     <!-- Page Heading -->
                     <header class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Overview</h1>
+                        <h1 class="h3 mb-0 text-gray-00">Overview</h1>
                         <span class="d-flex align-items-center flex-end">
-                            <i class="bi bi-search p-2 "></i>
+                            <i class="bi bi-search p-2"></i>
                             <i class="bi bi-bell-fill p-2"></i>
                             <span class="d-flex p-2" style="height: 32px;">
                                 <span class="vr"></span>
                             </span>
                             <a>
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small px-sm-2">Wing Tung Ringo</span>
-                                <img class="img-fluid mb-2 rounded-circle" style="width: 35px; height: 35px" src="assets/images/854ac739a1a54b9219037b25b41868ec.png" alt="user's icon">
+                                <img class="img-fluid mb-2 rounded-circle" id="user-icon" src="assets/images/854ac739a1a54b9219037b25b41868ec.png" alt="user's icon">
                             </a>   
                         </span>
                     </header>
@@ -303,10 +303,10 @@
                     <!-- Close 2nd Content Row -->    
                             
                     <!-- 3rd Content Row -->
-                    <footer class="row">
+                    <section class="row">
 
                         <!-- Unresolved tickets -->
-                        <article class="col-lg-6 mb-2">
+                        <article class="col-lg-6 mt-3">
                             <section class="card mb-4">
                                 <span class="card-header py-3">
                                     <span class="d-flex justify-content-between align-items-center">
@@ -343,14 +343,14 @@
                         </article>
 
                         <!-- Tasks Card -->
-                        <article class="col-lg-6 mb-2">
+                        <article class="col-lg-6 mt-3">
                             <section class="card mb-4">
                                 <span class="card-header py-3">
                                     <span class="d-flex justify-content-between align-items-center">
                                         <h6 class="m-0 font-weight-bold text-black fw-bold">Tasks</h6>
                                         <a href="#" class="btn btn-link text-primary">View all</a>
                                     </span>
-                                    <p class="m-0 font-weight-bold text-black text-body-tertiary">Today</p>
+                                    <p class="m-0 text-black text-body-tertiary" id="today">Today</p>
                                 </span>
 
                                 <fieldset class="card-body">
@@ -358,22 +358,30 @@
                                     <table class="table table-borderless">
                                         <tbody>
                                             <tr>
-                                                <td>Create new task</td>
-                                                <td>
-                                                    <i class="bi bi-plus-square-fill"></i>
+                                                <td class="text-secondary">Create new task</td>
+                                                <td class="text-end">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" id="create-icon">
+                                                            <rect width="24" height="24" rx="8" fill="#F0F1F7"/>
+                                                            <path d="M12 7V17" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round"/>
+                                                            <path d="M17 12L7 12" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round"/>
+                                                        </svg>
                                                 </td>
-                                            </tr>
+                                            </tr> 
                                     
                                             <tr>
                                                 <td>
                                                     <span class="form-check rounded">
                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
                                                         <label class="form-check-label" for="flexCheckDefault1">Finish ticket update</label>
-                                                        <span class="d-grid d-md-flex justify-content-md-end">
-                                                            <button type="button" class="tasks-button" id="urgent-button">URGENT</button>
-                                                        </span>
                                                     </span>
                                                 </td>
+
+                                                <td>
+                                                        <span class="d-grid d-md-flex justify-content-md-end">
+                                                            <button type="button" class="tasks-button " id="urgent-button">URGENT</button>
+                                                        </span>
+                                                </td>
+                                                
                                             </tr>
                                     
                                             <tr>
@@ -381,10 +389,13 @@
                                                     <span class="form-check rounded">
                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
                                                         <label class="form-check-label" for="flexCheckDefault2">Create new ticket example</label>
+                                                    </span>
+                                                </td>
+                                                
+                                                <td>
                                                         <span class="d-grid d-md-flex justify-content-md-end">
                                                             <button type="button" class="tasks-button" id="new-button">NEW</button>
                                                         </span>
-                                                    </span>
                                                 </td>
                                             </tr>
                                     
@@ -393,10 +404,13 @@
                                                     <span class="form-check rounded">
                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
                                                         <label class="form-check-label" for="flexCheckDefault3">Update ticket report</label>
+                                                    </span>
+                                                </td>
+                                                
+                                                <td>
                                                         <span class="d-grid d-md-flex justify-content-md-end">
                                                             <button type="button" class="tasks-button" id="default-button">DEFAULT</button>
                                                         </span>
-                                                    </span>
                                                 </td>
                                             </tr>
                                         </tbody>

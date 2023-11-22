@@ -3,6 +3,7 @@ $spacing: 16px;
 $primary-font: 'Mulish', sans-serif;
 $menu-text-color: rgba(164, 166, 179, 1);
 $dashboard-bg-color:rgba(54, 55, 64, 1);
+$icon-color: rgba(197, 199, 205, 1);
 
 .container-fluid {
   font-family: $primary-font;
@@ -44,4 +45,15 @@ header {
 
 #dashboard{
   color: $dashboard-bg-color;
+}
+
+#user-icon {
+  width: 43.333px;
+  height:  43.333px;
+  padding: 2px;
+  border: 1.5px solid rgba(223, 224, 235, 1);
+}
+
+#create-icon {
+  cursor: pointer;
 }
