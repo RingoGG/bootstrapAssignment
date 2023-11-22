@@ -1,4 +1,4 @@
-// Area Chart Example
+// Area Chart
 var ctx = document.getElementById("myAreaChart").getContext("2d");
 
 // Create a linear gradient
